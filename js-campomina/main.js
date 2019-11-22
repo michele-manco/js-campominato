@@ -5,7 +5,7 @@
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha inserito un numero consentito.
 var stocknumb = [];
 var counter = 0;
-while (stocknumb.length < 15) {
+while (stocknumb.length < 16) {
   var numb=generaRandom(1, 100);
   console.log(numb);
 
@@ -20,10 +20,10 @@ while (stocknumb.length < 15) {
 }
 var insert = parseInt(prompt('digita un numero intero'));
 console.log(insert);
-stocknumb.push(insert);
+// stocknumb.push(insert);
 
 
-var match = 0;
+var match = 0
 for (var i = 0; i < stocknumb.length; i++) {
     if (insert == stocknumb[i]) {
 
@@ -32,12 +32,13 @@ for (var i = 0; i < stocknumb.length; i++) {
     }
 }
 if (match == 1) {
-  console.log('hai perso');
+  console.log('hai perso')          ;
 
 } else {
-  insert = parseInt(prompt('digita un numero intero'));
-  console.log(insert);
-  stocknumb.push(insert);
+  // insert = parseInt(prompt('digita un numero intero'));
+  // console.log(insert);
+  // stocknumb.push(insert);
+  console.log();
 }
 
 function generaRandom(min, max) {
